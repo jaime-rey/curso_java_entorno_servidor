@@ -2,7 +2,18 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": ["."],
     "code-runner.executorMap": {
-        "java": "cd $dir && java $fileName"
+        "java": "cd $dir && chcp 65001 > $null && java $fileName"
     },
-    "code-runner.runInTerminal": true
+    "code-runner.runInTerminal": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "args": ["-NoExit", "-Command", "chcp 65001 > $null"]
+        },
+        "Command Prompt": {
+            "path": "cmd.exe",
+            "args": ["/K", "chcp 65001 > nul"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell"
 }
