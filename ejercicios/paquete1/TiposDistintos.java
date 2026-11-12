@@ -1,4 +1,4 @@
-package paquete1;
+package ejercicios.paquete1;
 
 public class TiposDistintos {
     public static void main(String[] args) {

@@ -1,3 +1,8 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": ["."],
+    "code-runner.executorMap": {
+        "java": "cd $dir && java $fileName"
+    },
+    "code-runner.runInTerminal": true
 }

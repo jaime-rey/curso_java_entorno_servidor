@@ -1,4 +1,4 @@
-package paquete2;
+package ejercicios.paquete2;
 
 public class TablaFormateada {
     public static void main(String[] args) {
