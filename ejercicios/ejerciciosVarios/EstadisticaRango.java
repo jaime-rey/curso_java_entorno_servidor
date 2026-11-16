@@ -1,4 +1,4 @@
-package ejercicios.paquete4;
+package ejercicios.ejerciciosVarios;
 
 public class EstadisticaRango {
     public static void main() {

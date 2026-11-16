@@ -1,4 +1,4 @@
-package ejercicios.paquete5;
+package ejercicios.ejerciciosVarios;
 
 import java.util.Arrays;
 import java.util.DoubleSummaryStatistics;

@@ -1,4 +1,4 @@
-package ejercicios.paquete4;
+package ejercicios.ejerciciosVarios;
 
 public class TablaParImpar {
     public static void main(String[] args) {
