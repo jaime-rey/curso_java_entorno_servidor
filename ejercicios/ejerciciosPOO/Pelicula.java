@@ -69,6 +69,10 @@ public class Pelicula {
     }
 
     public static void main(String[] args) {
+
+        IO.println("======= CARTELERA =======");
+
+        int peliculasDisponibles = 0;
         Pelicula[] peliculas = new Pelicula[5];
         peliculas[0] = new Pelicula("COCO", 121);
         peliculas[1] = new Pelicula("DUNE", 155, +12);
@@ -83,11 +87,14 @@ public class Pelicula {
             System.out.println();
             if (pelicula.puedeVer(edad)) {
                 System.out.println("Puedes ver: " + pelicula.getTitulo());
+                peliculasDisponibles++;
             } else {
                 System.out.println("No puedes ver: " + pelicula.getTitulo());
             }
 
             System.out.println();
         }
+        System.out.println(
+                "Películas disponibles para ver: " + peliculasDisponibles + " películas de " + peliculas.length);
     }
 }
