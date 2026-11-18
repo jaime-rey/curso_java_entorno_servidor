@@ -1,5 +1,7 @@
 package ejercicios.ejerciciosPOO;
 
+import utils.Teclado;
+
 public class PrincipalMascota {
     public static void main(String[] args) {
         Mascota mascota1 = new Mascota();
@@ -20,5 +22,21 @@ public class PrincipalMascota {
         mascota2.setEdad(1);
         System.out.println("\n--- Ficha de Michi ---");
         mascota2.mostrarFicha();
+
+        IO.println("========================\n");
+        IO.println("Introduce los datos de tu mascota");
+        Mascota mascota3 = crearMascota();
+        System.out.println("\n--- Ficha de la nueva mascota ---");
+        mascota3.mostrarFicha();
+
+    }
+
+    private static Mascota crearMascota() {
+        Mascota mascota = new Mascota();
+        mascota.setNombre(Teclado.pedirTexto("Nombre: "));
+        mascota.setEspecie(Teclado.pedirTexto("Especie: "));
+        mascota.setEdad(Teclado.pedirEntero("Edad (0-40): ", 0, 40));
+        mascota.setVacunada(Teclado.pedirSiNo("Vacunada (s/n): "));
+        return mascota;
     }
 }
