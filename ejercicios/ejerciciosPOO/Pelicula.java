@@ -57,18 +57,9 @@ public class Pelicula {
     }
 
     public String getDuracionTexto() {
-        if (duracion < 60) {
-            return minutosTexto(duracion);
-        } else {
-            int horas = duracion / 60;
-            int minutos = duracion % 60;
-            return (horas == 1 ? horas + " hora " : horas + " horas ") + minutosTexto(minutos);
-        }
-    }
 
-    // "1 minuto" en singular, "N minutos" en el resto de casos
-    private static String minutosTexto(int minutos) {
-        return minutos == 1 ? minutos + " minuto" : minutos + " minutos";
+        return duracion < 60 ? duracion + " min" : (duracion / 60) + " h " + (duracion % 60) + " min";
+
     }
 
     public void mostrarFicha() {
@@ -78,25 +69,25 @@ public class Pelicula {
     }
 
     public static void main(String[] args) {
-        Pelicula[] peliculas = new Pelicula[4];
-        peliculas[0] = new Pelicula("COCO", 121, 0);
+        Pelicula[] peliculas = new Pelicula[5];
+        peliculas[0] = new Pelicula("COCO", 121);
         peliculas[1] = new Pelicula("DUNE", 155, +12);
         peliculas[2] = new Pelicula("Alien", 117, +16);
         peliculas[3] = new Pelicula("Corto sin datos", -5);
-
-        for (Pelicula pelicula : peliculas) {
-            pelicula.mostrarFicha();
-            System.out.println();
-        }
+        peliculas[4] = new Pelicula("XXX", 100, +18);
 
         int edad = Teclado.pedirEntero("Introduce tu edad: ", 0);
 
         for (Pelicula pelicula : peliculas) {
+            pelicula.mostrarFicha();
+            System.out.println();
             if (pelicula.puedeVer(edad)) {
                 System.out.println("Puedes ver: " + pelicula.getTitulo());
             } else {
                 System.out.println("No puedes ver: " + pelicula.getTitulo());
             }
+
+            System.out.println();
         }
     }
 }
