@@ -110,4 +110,14 @@ public class ProductoTienda {
         }
     }
 
+    public static void main(String[] args) {
+        
+        ProductoTienda producto = ProductoTienda.builder()
+                .nombre("Laptop")
+                .precio(1000)
+                .build();
+        System.out.println(producto);
+        System.out.println("Precio con IVA: " + producto.getPrecioConIVA());
+    }
+
 }
