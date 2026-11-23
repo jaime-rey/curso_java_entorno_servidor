@@ -6,6 +6,9 @@
     ],
     "java.referencesCodeLens.enabled": true,
 
+    // Spell checker: español + inglés en todos los ficheros del proyecto.
+    "cSpell.language": "en,es",
+
     // Más RAM para el servidor de Java (jdtls). Por defecto es 1 GB, se queda corto.
     "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m",
 
