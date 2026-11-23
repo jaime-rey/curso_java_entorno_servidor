@@ -5,6 +5,42 @@
         "."
     ],
     "java.referencesCodeLens.enabled": true,
+
+    // Más RAM para el servidor de Java (jdtls). Por defecto es 1 GB, se queda corto.
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m",
+
+    // Formateo
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // No vigilar directorios enormes: reduce muchísimo el consumo y los cuelgues.
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/bin/**": true,
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/*.class": true
+    },
+    // Tampoco los muestres en Explorer ni los busques.
+    "files.exclude": {
+        "**/*.class": true,
+        "**/bin": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bin": true,
+        "**/*.class": true
+    },
+
     "code-runner.executorMap": {
         "java": "cd $dir && chcp 65001 > $null && java $fileName"
     },
