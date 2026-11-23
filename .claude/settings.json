@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(javac ejercicios/paquete10/Pagable.java ejercicios/paquete10/EmpleadoFijo.java ejercicios/paquete10/RepartidorPorHoras.java ejercicios/paquete10/EmpresaPagos.java)",
+      "Bash(java -Dstdout.encoding=UTF-8 ejercicios.paquete10.EmpresaPagos)",
+      "Bash(javac ejercicios/ejerciciosAbstractoPoli/*.java)",
+      "Bash(java -Dstdout.encoding=UTF-8 ejercicios.ejerciciosAbstractoPoli.Ejercicio4Academia)"
+    ]
+  }
+}
