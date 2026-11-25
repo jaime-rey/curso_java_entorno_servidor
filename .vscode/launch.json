@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Ejercicio4LeerSaludo",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete12.Ejercicio4LeerSaludo",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio3GuardarSaludo",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete12.Ejercicio3GuardarSaludo",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio2ValidarEdad (con args)",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete12.Ejercicio2ValidarEdad",
+            "console": "externalTerminal",
+            "vmArgs": "-Dstdout.encoding=cp850 -Dstderr.encoding=cp850",
+            "args": [
+                "25",
+                "-3",
+                "hola",
+                "40"
+            ]
+        }
+    ]
+}
