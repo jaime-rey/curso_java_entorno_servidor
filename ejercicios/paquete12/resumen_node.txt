@@ -1,0 +1,2 @@
+Informe generado desde Node.js
+Todo correcto.
