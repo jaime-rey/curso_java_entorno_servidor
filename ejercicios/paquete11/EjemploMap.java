@@ -4,7 +4,6 @@ import java.util.HashMap;
 
 public class EjemploMap {
     // EjemploMap.java)
-    public class EjemploMap {
         // Inicia el método principal
         public static void main(String[] args) {
             // Creamos un mapa donde la Clave es un texto (String) y el Valor asociado
@@ -31,4 +30,4 @@ public class EjemploMap {
         }
         // Cierra la clase EjemploMap
     }
-}
+

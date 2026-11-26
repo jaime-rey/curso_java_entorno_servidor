@@ -4,27 +4,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ejercicio3HilosTienda {
-    public static void main(String[] args) {
+    public static void main() {
 
         ArrayList<Double> importes = new ArrayList<>(List.of(10.0, 20.5, 30.75));
-        ArrayList<String> pedidosPreparados = new ArrayList<>(List.of("Pedido1", "Pedido2", "Pedido3"));
 
-        Thread hiloImportes = new Thread(() -> {
+        Thread hiloCaja = new Thread(() -> {
+            double total = 0;
             for (Double importe : importes) {
-                System.out.println("Importe: " + importe);
+                System.out.println("[Caja]: cobro de " + importe + " €");
+                total += importe;
             }
+            System.out.println("[Caja]: total cobrado = " + total + " €");
         });
 
         Thread hiloPedidos = new Thread(() -> {
-            for (String pedido : pedidosPreparados) {
-                System.out.println("Pedido preparado: " + pedido);
+            for (int i = 1; i <= 5; i++) {
+                System.out.println("[Almacén]: paquete " + i + " preparado");
             }
         });
 
-        hiloImportes.start();
+        hiloCaja.start();
         hiloPedidos.start();
 
-        System.out.println("Hilos iniciados");
+        try {
+            hiloCaja.join();
+            hiloPedidos.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Jornada terminada");
     }
 
 }

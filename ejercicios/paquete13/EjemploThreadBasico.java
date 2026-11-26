@@ -6,7 +6,7 @@ public class EjemploThreadBasico {
     // Aquí arranca el HILO PRINCIPAL del programa
     public static void main(String[] args) {
         // Creamos un HILO SECUNDARIO y le pasamos con una lambda () -> { ... }
-        // el trabajo que debe hacer. Todo lo que esté dentro de estas llaves
+        // el trabajo que debe hacer, lo que esté dentro de estas llaves
         // lo hará el segundo "trabajador" en paralelo
         Thread hiloSecundario = new Thread(() -> {
             for (int i = 1; i <= 5; i++) {
