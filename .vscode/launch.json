@@ -3,6 +3,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ejercicio3HilosTienda",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.ejerciciosTema13.Ejercicio3HilosTienda",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio2OrdenarProductos",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.ejerciciosTema13.Ejercicio2OrdenarProductos",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio1Factura",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.ejerciciosTema13.Ejercicio1Factura",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "ProyectoFinalModulo2",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.ProyectoFinalModulo2",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "EjemploSincronizacion",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.EjemploSincronizacion",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "EjemploThreadBasico",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.EjemploThreadBasico",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "EjemploNotasLambda",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.EjemploNotasLambda",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "EjemploLambdaConBloque",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.EjemploLambdaConBloque",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "EjemploLambdaBasica",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.EjemploLambdaBasica",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "EjemploVentanas",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.EjemploVentanas",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
+            "name": "Pedido",
+            "request": "launch",
+            "mainClass": "ejercicios.paquete13.Pedido",
+            "projectName": "curso_java_84bd609d"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio4LeerSaludo",
             "request": "launch",
             "mainClass": "ejercicios.paquete12.Ejercicio4LeerSaludo",
