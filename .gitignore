@@ -1,5 +1,33 @@
-﻿*.class
+﻿# Compilados Java
+*.class
+out/
+bin/
 
+# Maven
+target/
+.mvn/
+mvnw
+mvnw.cmd
+dependency-reduced-pom.xml
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+buildNumber.properties
 
+# Archivos empaquetados
 *.zip
-.vscode/settings.json
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Materiales del curso (no van al repo)
+*.pdf
+
+# Config local personal de VS Code (settings.json compartido SÍ se sube)
+.vscode/settings.local.json

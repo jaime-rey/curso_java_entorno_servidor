@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "dev.jaimerey.App",
+            "projectName": "tienda-online"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "dev.jaimerey.App",
+            "projectName": "maven-proyect"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "ejemplo-maven"
+        },
+        {
+            "type": "java",
             "name": "Ejercicio3HilosTienda",
             "request": "launch",
             "mainClass": "ejercicios.paquete13.ejerciciosTema13.Ejercicio3HilosTienda",
